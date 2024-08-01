@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="logoutButton" class="btn solid">Logout</button>
+    <div id="container">
+        <div id="dashboard">
+            <form id="addPasswordForm">
+                <h2 class="title">Save your Password!</h2>
+                <div class="input-field">
+                    <i class="fa fa-window-maximize"></i>
+                    <input type="text" name="website" placeholder="Website" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+            
+                <button type="submit" class="btn solid">Add</button>
+            </form>
+            <div id="passwords">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Website</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="passwordTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
